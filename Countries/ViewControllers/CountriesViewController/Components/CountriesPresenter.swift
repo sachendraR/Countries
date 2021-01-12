@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CountriesPresenter : Presenter
+class CountriesPresenter : NSObject, Presenter
 {
     var viewModel: CountriesViewModel!
     weak var view: CountriesViewController?
