@@ -17,20 +17,20 @@
                 <rect key="frame" x="0.0" y="0.0" width="378" height="89"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ylZ-FA-EV6">
-                        <rect key="frame" x="8" y="8" width="0.0" height="73"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" placeholderIntrinsicWidth="0.0" placeholderIntrinsicHeight="73" translatesAutoresizingMaskIntoConstraints="NO" id="ylZ-FA-EV6">
+                        <rect key="frame" x="8" y="8" width="70" height="73"/>
                         <constraints>
-                            <constraint firstAttribute="width" priority="250" id="E9P-qa-Qls"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="E9P-qa-Qls"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oK1-kj-nKl">
-                        <rect key="frame" x="16" y="37.5" width="31" height="14.5"/>
+                        <rect key="frame" x="86" y="37.5" width="31" height="14.5"/>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="leb-UH-fv2">
-                        <rect key="frame" x="16" y="88" width="362" height="1"/>
+                        <rect key="frame" x="86" y="88" width="292" height="1"/>
                         <color key="backgroundColor" red="0.81417988989637302" green="0.81417988989637302" blue="0.81417988989637302" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="Soa-QL-02W"/>

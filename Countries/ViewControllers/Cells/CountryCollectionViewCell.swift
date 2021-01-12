@@ -30,10 +30,16 @@ class CountryCollectionViewCell: UICollectionViewCell,CollectionViewCell {
     }
 
     func update(withObject object: Country) {
-        // Keeping thumb empty for now
-        ivThumb.image = nil
         
         lblCaption.text = object.Name
+        
+        // Before setting new image, clearing so that while the new image is being fetched wrong image is not shown due to recycling of cell
+        ivThumb.image = nil
+        ImageCacheManager.shared.cache(forCountry: object) { [weak self](image) in
+            DispatchQueue.main.async {
+                self?.ivThumb.image = ImageCacheManager.shared.image(forCountry: object)
+            }
+        }
     }
     
 }

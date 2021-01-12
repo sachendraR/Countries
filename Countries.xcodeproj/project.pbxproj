@@ -24,6 +24,8 @@
 		016F5B8F25ADED2800A7AD78 /* ProvincesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F5B8E25ADED2800A7AD78 /* ProvincesPresenter.swift */; };
 		016F5B9425ADF4E500A7AD78 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F5B9325ADF4E500A7AD78 /* BaseViewController.swift */; };
 		016F5B9925ADF54500A7AD78 /* Error+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F5B9825ADF54500A7AD78 /* Error+Utils.swift */; };
+		016F5BA525AE03E300A7AD78 /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F5BA425AE03E300A7AD78 /* ImageCacheManager.swift */; };
+		016F5BAD25AE055700A7AD78 /* UIImageView+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F5BAC25AE055700A7AD78 /* UIImageView+Image.swift */; };
 		0173D3F825AC94CA00FB88D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0173D3F725AC94CA00FB88D9 /* AppDelegate.swift */; };
 		0173D40125AC94CC00FB88D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0173D40025AC94CC00FB88D9 /* Assets.xcassets */; };
 		0173D40425AC94CC00FB88D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0173D40225AC94CC00FB88D9 /* LaunchScreen.storyboard */; };
@@ -78,6 +80,8 @@
 		016F5B8E25ADED2800A7AD78 /* ProvincesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvincesPresenter.swift; sourceTree = "<group>"; };
 		016F5B9325ADF4E500A7AD78 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		016F5B9825ADF54500A7AD78 /* Error+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+Utils.swift"; sourceTree = "<group>"; };
+		016F5BA425AE03E300A7AD78 /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
+		016F5BAC25AE055700A7AD78 /* UIImageView+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Image.swift"; sourceTree = "<group>"; };
 		0173D3F425AC94CA00FB88D9 /* Countries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Countries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0173D3F725AC94CA00FB88D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0173D40025AC94CC00FB88D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 			children = (
 				016F5B4E25ACC27000A7AD78 /* UIView+Utils.swift */,
 				016F5B9825ADF54500A7AD78 /* Error+Utils.swift */,
+				016F5BAC25AE055700A7AD78 /* UIImageView+Image.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -194,6 +199,14 @@
 				016F5B8E25ADED2800A7AD78 /* ProvincesPresenter.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		016F5BA325AE03D600A7AD78 /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				016F5BA425AE03E300A7AD78 /* ImageCacheManager.swift */,
+			);
+			path = ImageCache;
 			sourceTree = "<group>";
 		};
 		0173D3EB25AC94CA00FB88D9 = {
@@ -251,6 +264,7 @@
 		0173D43525AC979500FB88D9 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				016F5BA325AE03D600A7AD78 /* ImageCache */,
 				0173D44525ACAAA500FB88D9 /* Models */,
 				0173D43625AC979500FB88D9 /* WebAPIInteractor */,
 				0173D43A25AC979500FB88D9 /* WebAPITransporter */,
@@ -453,6 +467,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				016F5B8A25ADED0600A7AD78 /* ProvincesViewModel.swift in Sources */,
+				016F5BAD25AE055700A7AD78 /* UIImageView+Image.swift in Sources */,
 				016F5B8F25ADED2800A7AD78 /* ProvincesPresenter.swift in Sources */,
 				016F5B5F25ADDC0500A7AD78 /* View.swift in Sources */,
 				0173D44725ACAAB300FB88D9 /* Country.swift in Sources */,
@@ -470,6 +485,7 @@
 				0173D45425ACABC500FB88D9 /* CountriesViewController.swift in Sources */,
 				016F5B8425ADEAA100A7AD78 /* AsyncOperation.swift in Sources */,
 				016F5B3725ACBA4000A7AD78 /* MapViewController.swift in Sources */,
+				016F5BA525AE03E300A7AD78 /* ImageCacheManager.swift in Sources */,
 				016F5B7225ADDE7E00A7AD78 /* CountriesViewModel.swift in Sources */,
 				0173D3F825AC94CA00FB88D9 /* AppDelegate.swift in Sources */,
 				0173D48525ACB94700FB88D9 /* ProvincesViewController.swift in Sources */,
